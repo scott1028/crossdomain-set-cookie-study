@@ -32,6 +32,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(function(req, res, next) {
   console.log('Cookies: ', JSON.stringify(req.cookies));
+  // NOTE: just check `ngrep` log
+  // console.log('req:', req);
+  // console.log('res:', res);
   next();
 });
 
