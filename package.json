@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "cross-env yarn run-p start:inside start:outside start:ngrep openBrowser",
+    "start:wsl": "cross-env yarn run-p start:inside start:outside openBrowser",
     "start:inside": "cross-env node ./bin/www",
     "start:outside": "cross-env PORT=3001 node ./bin/www",
     "start:ngrep": "sudo ngrep -d lo -W ByLine port 3000 or port 3001",
