@@ -11,7 +11,7 @@
     "openBrowser": "cross-env opn http://localhost:3001"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.2",
     "console-log-div": "^0.6.3",
     "cookie-parser": "~1.4.3",
     "cors": "^2.8.4",
